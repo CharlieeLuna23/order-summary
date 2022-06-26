@@ -1,0 +1,200 @@
+html, body{
+    height: 98%;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+
+body{
+    font-weight: 500;
+    background: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-weight: 700;
+}
+
+h4{
+    margin: 0;
+    font-size: 0.9em;
+}
+
+p{
+    line-height: 25px;
+    color: hsl(224, 23%, 55%)
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 330px;
+    background: white;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0px 20px 20px hsl(245, 75%, 52%, 5%);
+}
+
+.hero-img{
+    width: 330px;
+    border-radius: 30px 30px 0 0;
+}
+
+.order-summ{
+    margin: 0 30px 0 30px;
+}
+
+.plan{
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 30px 30px 30px;
+    padding: 15px 0px 15px 0px;
+    border-radius: 10px;
+}
+
+.plan img{
+    width: 45px;
+}
+
+.plan div{
+    margin-right: 40px;
+
+}
+
+.plan p{
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.plan a{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: hsl(245, 75%, 52%);
+    margin-right: 10px;
+}
+
+.plan a:hover{
+    color: rgba(120, 109, 236, 1);
+    text-decoration: none;
+}
+
+.payment{
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.payment a:hover{
+    color: black;
+}
+
+button{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-style: none;
+    width: 80%;
+    font-weight: 900;
+    font-size: 0.9em;
+    padding: 15px 0 15px 0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 20px 20px hsl(245, 75%, 52%, 15%);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(120, 109, 236, 1)
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media(min-width:1080px){
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+
+    .container{
+        width: 450px;
+    }
+
+    .hero-img{
+        width: 450px;
+    }
+
+    .order-summ{
+        margin-top: 40px;
+    }
+
+    .order-summ h2{
+        font-size: 1.8em;
+        font-weight: 900;
+    }
+
+    .order-summ p{
+        margin: 20px 30px 30px 30px;
+    }
+
+    .plan{
+        padding: 22px 5px 20px 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content:left;
+    }
+
+    .plan img{
+        margin-right: 20px;
+    }
+
+    .plan div{
+        margin-right: 120px;
+    }
+
+    .plan h4{
+        font-size: 1.1em;
+    }
+
+    .plan p{
+        font-size: 1em;
+    }
+
+    .plan a{
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    .payment{
+        margin-bottom: 50px;
+    }
+
+    .payment a{
+        font-size: 0.9em;
+    }
+}
